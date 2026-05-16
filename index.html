@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>超表面技术 × 光电创新</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="three-container"></div>
+  <div class="scanline-overlay"></div>
+
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a class="navbar__logo" href="#">METAOPTICS</a>
+      <nav class="navbar__links">
+        <a href="#hero">首页</a>
+        <a href="#features">核心技术</a>
+        <a href="#applications">应用领域</a>
+        <a href="#about">关于我们</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content">
+    <section id="hero" class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">超表面技术<br><span class="hero__title--accent">× 光电创新</span></h1>
+        <p class="hero__subtitle">为下一代光学系统提供突破性解决方案</p>
+        <div class="hero__cta-group">
+          <button class="cta cta--primary" data-hover>探索核心技术</button>
+          <button class="cta cta--secondary" data-hover>了解更多</button>
+        </div>
+      </div>
+      <div class="hero__scroll-hint">
+        <span></span>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="features__header">
+        <h2 class="features__title">核心优势</h2>
+        <p class="features__desc">超表面技术引领光电系统革命</p>
+      </div>
+      <div class="features__grid">
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.2"/>
+              <circle cx="24" cy="24" r="12" stroke="currentColor" stroke-width="0.8"/>
+              <circle cx="24" cy="24" r="4" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">高分辨率成像</h3>
+          <p class="feature-card__desc">突破衍射极限，实现亚波长级别的超高分辨率成像能力，为显微观测和精密检测提供全新可能。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <rect x="10" y="14" width="28" height="20" rx="3" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M19 10V18M29 10V18" stroke="currentColor" stroke-width="1.2"/>
+              <circle cx="24" cy="24" r="5" stroke="currentColor" stroke-width="0.8"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">轻量化光学</h3>
+          <p class="feature-card__desc">以纳米结构替代传统笨重透镜组，大幅降低光学系统体积与重量，适配无人机、卫星等载荷敏感场景。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M8 38L24 10L40 38" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M14 30H34" stroke="currentColor" stroke-width="1.2"/>
+              <circle cx="24" cy="22" r="3" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">低成本制造</h3>
+          <p class="feature-card__desc">兼容CMOS半导体工艺，实现晶圆级规模化量产，显著降低精密光学元件的制造成本与周期。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M24 4V14" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M24 34V44" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M4 24H14" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M34 24H44" stroke="currentColor" stroke-width="1.2"/>
+              <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="0.8"/>
+              <circle cx="24" cy="24" r="3" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">多光谱探测</h3>
+          <p class="feature-card__desc">单一超表面同时调控可见光至红外波段，实现多光谱并行探测与识别，赋能智能感知系统。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="applications" class="applications">
+      <div class="applications__header">
+        <h2 class="applications__title">应用领域</h2>
+      </div>
+      <div class="applications__grid">
+        <div class="app-item">
+          <span class="app-item__label">AR/VR 近眼显示</span>
+        </div>
+        <div class="app-item">
+          <span class="app-item__label">自动驾驶 LiDAR</span>
+        </div>
+        <div class="app-item">
+          <span class="app-item__label">生物医学成像</span>
+        </div>
+        <div class="app-item">
+          <span class="app-item__label">量子光学</span>
+        </div>
+        <div class="app-item">
+          <span class="app-item__label">空间光通信</span>
+        </div>
+        <div class="app-item">
+          <span class="app-item__label">国防安全</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about__content">
+        <h2 class="about__title">关于我们</h2>
+        <p class="about__text">我们是一支专注于超表面光学与光电集成技术的前沿研究团队，致力于将实验室突破转化为可落地的工程解决方案，推动下一代光学系统的革新。</p>
+        <button class="cta cta--primary" data-hover>联系我们</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__brand">METAOPTICS</span>
+      <span class="footer__copy">&copy; 2026 MetaOptics Lab. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
